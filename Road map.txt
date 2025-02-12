@@ -1,0 +1,121 @@
+HUB
+
+game's resume
+ {basic explanations}
+ x -assigning menu / brief start explanation 
+ x -in game controls
+ x -map navigation and unlocks
+ x  -departaments centers, halls, elevators, etc
+ x -objectives
+ x -damage types
+ x  -health and sanity
+ x -agents and clerks
+ x -threat levels
+   -fear and damage effects
+  -alarm level
+ x -day resets, memory repository and day 1 resets
+ x -end of day info screen
+   -mention of lob points
+ x -abnormalities selection and tool abno  behavior
+  -emergency levels
+  -lob points and before day assigning menu
+   -E.G.O. equipment menu
+  -qliphot gauge and qliphot meldowns
+  -bullets
+Mention that the guide is still incomplete in regard to abnormalities
+Project moon deserved rights
+
+-containments units
+ x -abnormalities common behaviors
+ x -qliphot counters
+  -work types
+ x -works success chance and pe boxes
+   -max ammount of pe boxes and negative pe boxes (damage in contaiment)
+   -abnormality information ui
+    -E.G.O. in general
+   -observation levels
+ x -work results
+  -tools
+
+-Agents stats, combat and E.G.O.
+ -fortitude, prudence, temperance and justice
+  -stats levels and how they're rised
+ -panic states
+ -Agents levels and thresholds
+ -desconstruction of combat's movement and strats
+ -damage resistances and vulnerabilities
+  -weird decimal damage numbers mechanics
+ -E.G.O. weapons
+  -differences in weapons / ranges and special attacks
+ -E.G.O. suits
+  -base gear
+ -E.G.O. gifts
+ -ordeals and their behaviors
+
+-deparments
+
+ x -general
+ x  -what's a sephira/ just slightly
+ x  -what are missions
+ x  -what are researches
+ x  -what are clerk bonuses
+ x   -no agents in department effect
+ x -what are agent bonuses
+ x -what is a head of department
+   -what is a sephira meltdown and what it entails
+   +individual per department
+  -mention of the sephiras /  just slightly
+  -location and adjecent departments
+   -number of containtment units
+  -department's mission list
+  -department's researches
+  -department's clerk bonuses
+  -department's agent bonuses
+   -heads of department
+  -department's sephira's meltdowns
+   -meltdown rewards
+  -separate mentions of the architecture department and it's changes
+   -white ordeals
+   -the claw
+
+-abnormalities info / repeating secuence, laveled by code and threat level
+ -abno code and name
+  -threat level
+ -abno in contaiment appearence
+  -max pe boxes
+  -damage type and amount of damage when worked on
+  -good, neutral and bad results thresholds
+  -qliphot counter
+ -research level bonuses
+ -respective E.G.O. weapon
+  -appearence
+  -cost
+  -level
+  -stats / damage type|s , range, attack speed/cap or unlimited, animation
+  -requirements 
+  -abilities
+ -respective E.G.O. suit
+  -appearences
+  -cost
+  -level
+  -stats / resistances
+  -requirements
+  -abilities
+ -E.G.O gift
+  -chances of obtaining
+  -stats
+   -abilities or alternative buffs
+ -work types efficiencies
+ -behaviors while in containtment
+ -events on qliphot counter deplition
+ -breached out appearence of is able to
+ -damage type when breached out
+ -damage resistances and vulnerabilities
+ -special abilities when breached out
+ -unlockable information
+
+----------------------------------------------------
+posible extras,
+
+-brief lore explanations
+-abnormalities histories

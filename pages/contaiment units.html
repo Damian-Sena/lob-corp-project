@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Unidades de contencion</title>
 
-    <link rel="stylesheet" href="../css/Contaiment.css">
+    <link rel="stylesheet" href="../Styles/Css/main.css">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
   </head>
 
-  <body>
+  <body class="body-contaiment">
     <header>
         <div class="navbar-container">
 
@@ -52,20 +52,21 @@
         </nav>
      </div>
 
-     <img class="page_first_logo" src="../img/Empty_Containment_Unit.png" alt="unidade de contencion vacia">
+     <img class="page_logo" src="../img/Empty_Containment_Unit.png" alt="unidade de contencion vacia">
 
-     <div class="index-first-box">
+     <div class="first-box">
 
-      <span> Las Unidades de Contención son las salas donde se contienen las Anormalidades . Cada Departamento tiene una cantidad máxima de unidades de contención establecida, normalmente 4 (8 para los Departamentos de Comando Central y Arquitectura ) y se puede acceder a ellas normalmente enviando Agentes para que trabajen con ellas. Se añaden más Unidades de Contención cada vez que se amplía un Departamento, siempre que el Departamento no haya alcanzado su capacidad máxima de Anormalidades.</span>
+      <p> Las Unidades de Contención son las salas donde se contienen las Anormalidades . Cada Departamento tiene una cantidad máxima de unidades de contención establecida, normalmente 4 (8 para los Departamentos de Comando Central y Arquitectura ) y se puede acceder a ellas normalmente enviando Agentes para que trabajen con ellas. Se añaden más Unidades de Contención cada vez que se amplía un Departamento, siempre que el Departamento no haya alcanzado su capacidad máxima de Anormalidades.</p>
 
-      <span>Los agentes deberan trabajar con dentro de estar unidades no solo para cumplir la cuota de energia atraves de la produccion de enkefalin, subproducto del trabajo en anormalidades, si no ademas pra producir cajas PE, unicas por cada unidad de contencion esta son utilizadas tanto para conocer mas sobre la anormalidad como para producir armamento E.G.O.</span>
+      <p>Los agentes deberan trabajar con dentro de estar unidades no solo para cumplir la cuota de energia atraves de la produccion de enkefalin, subproducto del trabajo en anormalidades, si no ademas pra producir cajas PE, unicas por cada unidad de contencion esta son utilizadas tanto para conocer mas sobre la anormalidad como para producir armamento E.G.O.</p>
+      </div>
   </div>
     </header>
     <main>
 
     <div class="between-segments-deco"></div>
 
-    <img src="../img/contaiment unit in action.png" alt="">
+    <img class="" src="../img/contaiment unit in action.png" alt="">
 
     <div class="between-segments-deco"></div>
 
@@ -78,14 +79,102 @@
       <p>demostracion visual utilizando la imagen en cabeza de pagina como ejemplo:</p>
 
       <ul>
-        <li>Nivel de riesgo: Como su nomber indica es representa tanto su nivel de peligro a la hora de dañor o directamente matar aquello sufra un aque de su parte como el la calidad de armamento que sera capas de producir <img src="../img/threat_level.png" alt=""></li>
-        <li>Contador Qliphoth: El contador Qliphoth en esencia representa la paciencia de la anormalidad, posee un numero maxino indiviual por cada anormalidad, puede subir o bajar dependiendo de varias condiciones indiviuales por cada anormalidad y una ves llegado a 0 la anormalidad rompera contencion y/o realizara un ataque o evento dañino dentro de la conpania.En caso de no poseer evento o capacidad para romper contencion su contador empezara y permanecera con una x, esto no significa que esta anormalidades no sean capaces de generar daño<img src="../img/Qliphoth counter.png" alt=""></li>
-        <li>Nomber de la anormalidad: simplemente indica el nombre designado a la anormalidad, en caso haber desbloquedo esta informacion mostrara en su lugar el codigo designado para la anormalidad<img src="../img/Containtment name.png" alt=""></li>
-        <li>Contador de cajas PE unicas: Esta es la moneda utilizada tanto para desbloquear informacion sobre la anormalidad que produce estas cajas como tambien para obtener armamento E.G.O. de la anormalidad<img src="../img/unique PE boxes.png" alt=""></li>
-        <li>Barra de resultados/cajas PE y NE producidas: El numero maximo de esta barra varia de anormalidad en anormalidad, por lo general un nivel de riesgo mas alto suele significar un mayor numero maximo, al momento de trabajar con una anormalidad cada cierto tiempo se producida un resultado, en caso de ser un buen resultado se producira una caja PE, simbolizado por las baras verde/amarillas, contando estas tanto para las cajas PE de la anormalidad como la energia que es producida, en caso de producir un mal resultado se producira una caja NE, representadas por las barras negras y rojas, estas no solo no aportan energia si no ademas dañan al agente trabajando dentro de la unidad de contencion, el trabajo se dara por finalizado una ves la barra vertical acabe de llenarse, o el agente dentro de la unidad muera o entre en panico a mitad del trascurso; una ves dada unas de estas condiciones se dara un resultado final  siendo malo, neutro o bueno dependiendo de numero final de cajas PE producidas
-          
-          <li><img class="img-6" src="../img/work results.png" alt=""></li>
-        </li><img class="img-7" src="../img/good-final-result.png" alt=""><img class="img-7" src="../img/neutral-final-result.png" alt=""><img class="img-7" src="../img/bad-final-result.png" alt="">
+        <div class="col">
+
+          <div class="row">
+
+            <div class="col">
+
+              <li>Nivel de riesgo: Como su nomber indica es representa tanto su nivel de peligro a la hora de dañor o directamente matar aquello sufra un aque de su parte como el la calidad de armamento que sera capas de producir</li>
+              
+            </div>
+
+            <div class="col">
+
+              <img src="../img/threat_level.png" alt="">
+              
+            </div>
+
+          </div>
+
+          <div class="spas-cont-5"></div>
+
+          <div class="row">
+
+            <div class="col">
+
+              <li>Contador Qliphoth: El contador Qliphoth en esencia representa la paciencia de la anormalidad, posee un numero maxino indiviual por cada anormalidad, puede subir o bajar dependiendo de varias condiciones indiviuales por cada anormalidad y una ves llegado a 0 la anormalidad rompera contencion y/o realizara un ataque o evento dañino dentro de la conpania.En caso de no poseer evento o capacidad para romper contencion su contador empezara y permanecera con una x, esto no significa que esta anormalidades no sean capaces de generar daño</li>
+              
+            </div>
+
+            <div class="col-sm">
+
+              <img src="../img/Qliphoth counter.png" alt="">
+              
+            </div>
+
+          </div>
+
+          <div class="spas-cont-5"></div>
+
+          <div class="row">
+
+            <div class="col">
+
+              <li>Nomber de la anormalidad: simplemente indica el nombre designado a la anormalidad, en caso haber desbloquedo esta informacion mostrara en su lugar el codigo designado para la anormalidad</li>
+              
+            </div>
+
+            <div class="col">
+
+              <img src="../img/Containtment name.png" alt="">
+              
+            </div>
+
+          </div>
+
+          <div class="spas-cont-5"></div>
+
+          <div class="row">
+
+            <div class="col">
+
+              <li>Contador de cajas PE unicas: Esta es la moneda utilizada tanto para desbloquear informacion sobre la anormalidad que produce estas cajas como tambien para obtener armamento E.G.O. de la anormalidad</li>
+              
+            </div>
+
+            <div class="col">
+
+              <img src="../img/unique PE boxes.png" alt="">
+              
+            </div>
+
+          </div>
+
+          <div class="spas-cont-5"></div>
+
+          <div class="row">
+
+            <div class="col">
+
+              <li>Barra de resultados/cajas PE y NE producidas: El numero maximo de esta barra varia de anormalidad en anormalidad, por lo general un nivel de riesgo mas alto suele significar un mayor numero maximo, al momento de trabajar con una anormalidad cada cierto tiempo se producida un resultado, en caso de ser un buen resultado se producira una caja PE, simbolizado por las baras verde/amarillas, contando estas tanto para las cajas PE de la anormalidad como la energia que es producida, en caso de producir un mal resultado se producira una caja NE, representadas por las barras negras y rojas, estas no solo no aportan energia si no ademas dañan al agente trabajando dentro de la unidad de contencion, el trabajo se dara por finalizado una ves la barra vertical acabe de llenarse, o el agente dentro de la unidad muera o entre en panico a mitad del trascurso; una ves dada unas de estas condiciones se dara un resultado final  siendo malo, neutro o bueno dependiendo de numero final de cajas PE producidas</li>
+              
+            </div>
+
+            <div class="col">
+
+              <img class="img-6" src="../img/work results.png" alt="">
+              
+            </div>
+
+          </div>
+
+        </div>
+        
+
+
+
+        </li><img class="img-9" src="../img/good-final-result.png" alt=""><img class="img-9" src="../img/neutral-final-result.png" alt=""><img class="img-9" src="../img/bad-final-result.png" alt="">
           </li>
 
       </ul>
@@ -99,14 +188,27 @@
     <div class="contenedor">
 
       <p>Al momento de seleccionar una anormalidad se abrira el seguiente menu</p>
-      <img class="img-1" src="../img/menu-work-display.png" alt="">
-      <p>dentro de este menu apareceran las differentes formas de trabajo:
-        <ul>
-          <li>instinto<img src="../img/Iconos/Instinct-work.png" alt="">, relacionado con la estadistica de fortaleza</li>
-          <li>perspicacia <img src="../img/Iconos/insight-work.png" alt="">, relacionado con la estadistica de prudencia</li>
-          <li>Apego <img src="../img/Iconos/attachment-work.png" alt="">, relacionado a la estadistica de templanza</li>
-          <li>represion<img src="../img/Iconos/Repression-work.png" alt="">, relacionado a la estadistica de justicia</li>
-        </ul>
+      <div class="row">
+
+        <div class="col">
+          
+          <img class="img-1" src="../img/menu-work-display.png" alt="">
+
+        </div>
+
+        <div class="col">
+
+          <p>dentro de este menu apareceran las differentes formas de trabajo:</p>
+          <ul>
+            <li>instinto<img src="../img/Iconos/Instinct-work.png" alt="">, relacionado con la estadistica de fortaleza</li>
+            <li>perspicacia <img src="../img/Iconos/insight-work.png" alt="">, relacionado con la estadistica de prudencia</li>
+            <li>Apego <img src="../img/Iconos/attachment-work.png" alt="">, relacionado a la estadistica de templanza</li>
+            <li>represion<img src="../img/Iconos/Repression-work.png" alt="">, relacionado a la estadistica de justicia</li>
+          </ul>
+
+        </div>
+
+      </div>
         <span>La provabilidad de exito al momento de trabajar con una anormalidad depende de 3 factores, las preferencia de trabajo de la anormalidad, el nivel de la estadistica relacionada al tipo de trabajo que este realizando el agente, y para anormalidades de nivel de riesgo WAW <img class="img-5" src="../img/Iconos/Waw.png" alt=""> y ALEPH <img class="img-5" src="../img/Iconos/Aleph.png" alt="">cada ves que se trabaje en ellas su provabilidad de exito se reducira en 4% y 6% respetivamente</span>
 
     </div>

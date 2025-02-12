@@ -1,0 +1,24 @@
+//import de reset
+
+@import "Tools/reset";
+
+//import de variables
+
+@import "Tools/variables";
+
+//import de listas
+@import "Tools/listas";
+
+//import de Mixins
+
+@import "Tools/mixin";
+
+//imports de scss por html
+
+ @import "Nestings/_index.scss";
+
+ @import "Nestings/_contaiment-units.scss";
+
+ @import "Nestings/_Combat.scss";
+
+ @import "Nestings/_departments.scss"

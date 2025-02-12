@@ -1,0 +1,117 @@
+//con parametros
+
+
+
+//sin paramentros
+
+//-contenidos de la navbar
+
+@mixin navbar-cont {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    padding: 20px;
+}
+
+@mixin navbar {
+    background-image: url(https://cloud.refsheet.net/images/images/000/873/044/large/Lobcorp_BG.png?1621532064);
+    background-size: contain;
+    border: 10px solid rgb(248, 123, 5) ;
+}
+
+//contenedor principal para contenidos
+
+@mixin contenedor {
+    display: grid;
+    width: auto;
+    height: auto;
+    color:white;
+    padding: 1%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-left: 10px;
+    border: 5px solid rgb(248, 123, 5);
+    background-color: black;
+}
+
+//Separación decorativa entre contenidos
+
+@mixin between-segments-deco {
+    background-image: url(../../img/Iconos/Warning.png);
+    width: 100%;
+    height: 10px;
+    background-repeat:repeat;
+}
+
+@mixin titulos {
+    text-align: center;
+    color: white;
+    font-size: x-large;
+}
+
+@mixin titulos-seccion {
+    color: white;
+    text-align: center;
+    font-size:xx-large;
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+
+@mixin clarification {
+    display: block;
+    width: 23%;
+    margin-right: 2px;
+    padding: 5px;
+    border: 3px solid rgb(248, 123, 5);
+    color: black;
+    background-image: url(https://cloud.refsheet.net/images/images/000/873/044/large/Lobcorp_BG.png?1621532064);
+    background-size: contain;
+    font-weight: 500;
+}
+
+@mixin first-box {
+    width: 50%;
+    border: 1px solid rgb(248, 123, 5);
+    text-align: center;
+    padding: 20px;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: black;
+}
+
+@mixin page-logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    padding-top: 120px;
+}
+
+@mixin spas-cont-1 {
+    width: 100%;
+    height: 200px;
+    background-color: cornflowerblue transparent;
+}
+
+@mixin spas-cont-2 {
+    width: 100%;
+    height: 100px;
+    background-color: darkseagreen transparent;
+}
+
+@mixin spas-cont-3 {
+    width:  5%;
+    background-color: gray transparent;
+}
+
+@mixin spas-cont-4 {
+    width: 2,5%;
+    background-color: burlywood transparent;
+}
+
+@mixin spas-cont-5 {
+    width: 100%;
+    height: 2rem;
+}
+
+

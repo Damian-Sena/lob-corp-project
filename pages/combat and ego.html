@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Stats, combate y E.G.O.</title>
 
-    <link rel="stylesheet" href="../css/Combat.css">
+    <link rel="stylesheet" href="../Styles/Css/main.css">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
   </head>
-<body>
+<body class="combat-index">
     <header>
         <div class="navbar-container">
 
@@ -33,10 +33,15 @@
                                 Stats, combate y E.G.O.
                             </a>
                             <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">Action</a></li>
-                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#agents-stats">Estadísticas basicas de los agentes</a></li>
                               <li><hr class="dropdown-divider"></li>
-                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                              <li><a class="dropdown-item" href="#panic-states">Estados de panico</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li><a class="dropdown-item" href="#damage-resistances">Resistencias al daño</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li><a class="dropdown-item" href="#decimal-damage">Daños decimales</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li><a class="dropdown-item" href="#E.G.O.">E.G.O.</a></li>
                             </ul>
                         </li>
                              <li class="nav-item">
@@ -51,7 +56,292 @@
         </nav>
      </div>
 
+     <img class="page_logo" src="../img/CombatExample.gif" alt="ejemplo de combate contra una anormalidad">
+
+
     </header>
+
+    <main>
+
+      <div class="spas-cont-5"></div>
+
+      <div class="first-box">
+
+      <p>Dentro de esta sección se discutirán las diferentes estadísticas que los agentes poseen, mecánicas que está afectan, armamento E.G.O. y los combates que no se pueden evitar, las Ordalías.</p>
+
+     </div>
+
+     <div class="spas-cont-5"></div>
+      <div class="between-segments-deco"></div>
+      <div class="spas-cont-5"></div>
+
+      <p id="agents-stats" class="titulos"> Estadísticas basicas de los agentes </p>
+
+      <div class="contenedor">
+
+        <div class="row">
+
+          <div class="col">
+
+          <p>Los agentes poseen 4 estadísticas base:</p>
+
+
+
+            
+              <p>La <img src="../img/Iconos/FortitudeIcon.png" alt="">Fortaleza: Representa cuánta vida máxima posee el agente.</p>
+
+
+
+              <p>La <img src="../img/Iconos/PrudenceIcon.png" alt="">Prudencia: representa cuánta sanidad mental máxima posee el agente.</p>
+              
+              <p>La <img src="../img/Iconos/TemperanceIcon.png" alt="">Templanza: Está se encuentra dividida en 2:</p>
+
+
+               <p> La “posibilidad de éxito”, que representa las posibilidades añadidas de que un resultado al trabajar con una anormalidad de positivo.</p>
+
+
+
+              <p> El “tiempo de trabajo”, está estadística reducirá el tiempo que un agente se tomará al trabajar con un anormalidad.</p>
+
+            <p>Estás estadísticas pueden cambiar independientemente de la otra.</p>
+          
+
+
+
+            <p>La <img src="../img/Iconos/JusticeIcon.png" alt="">Justicia: Esta estadística se encuentra dividida en 2:</p>
+
+            <p>La velocidad de movimiento: representa que tan rápido un agente de llegará de un punto A a un punto B.</p>
+
+
+
+            <p>La velocidad de ataque: Reduce el tiempo de inacción entre ataques, resultando en una mayor cantidad de daño por segundo.</p>
+
+
+           <p>Estás estadísticas pueden cambiar independientemente de la otra.</p>
+          
+
+          </div>
+
+          <div class="col sm"> 
+
+          <img class="img-1" src="../img/Agent stats.png" alt="">
+         </div>
+          
+        </div>
+
+        <div class="spas-cont-5"></div>
+        <div class="spas-cont-5"></div>
+
+        <div class="row">
+
+          <div class="col">
+            <p>Cada una de estas estadísticas bases principales pueden subir a través de trabajar con anormalidades, hasta un máximo de 100 ( excluyendo las recompensas de Hokma ), al cruzar cierto umbral numérico cada estadística subirá de nivel y el valor de numérico individual de cada nivel por estadística se sumará, si el valor resultante de está suma cruza cierto umbral el nivel de agente subirá, demostrado en el siguiente gráfico:</p>
+          </div>
+
+          <div class="col"> <img src="../img/StatsLevelsThresholds.png" alt="">
+          </div>
+
+          <div class="spas-cont-5"></div>
+
+          <p>Los números de la izquierda representan los umbrales numéricos que para subir de nivel una estadística y los números de la derecha los umbrales numéricos de la suma total de los niveles para subir el nivel de un agente.</p>
+
+          <p>Estás estadísticas pueden ser incrementadas de 2 maneras:</p>
+
+          <p>Por un lado al trabajar con anormalidades el valor base de una estadística incrementará según el trabajó realizado:
+          </p>
+
+          <ul>
+            <li>
+              <p>Trabajar <img src="../img/Iconos/Instinct-work.png" alt="">Instinto incrementará <img src="../img/Iconos/FortitudeIcon.png" alt="">Fortaleza </p>
+            </li>
+
+            <li>
+              <p>Trabajar <img src="../img/Iconos/insight-work.png" alt="">perspicacia incrementará <img src="../img/Iconos/PrudenceIcon.png" alt="">Prudencia </p>
+            </li>
+
+            <li>
+              <p>Trabajar <img src="../img/Iconos/attachment-work.png" alt="">Apego incrementará <img src="../img/Iconos/TemperanceIcon.png" alt="">Templanza </p>
+            </li>
+
+            <li>
+              <p>Trabajar <img src="../img/Iconos/Repression-work.png" alt="">Represion incrementará <img src="../img/Iconos/JusticeIcon.png" alt="">Justicia </p>
+            </li>
+          </ul>
+
+          <p>La cantidad incrementada se verá afectada por el riesgo de la anormalidad en la que se practica el trabajó, cuan más alto el riesgo mayor será el incremento estadístico. El aumento de estadística se aplicará una vez se pase al siguiente día.
+          </p>
+
+          <p>Por otro lado, las estadísticas de un empleado pueden incrementar o disminuir a través de efectos temporales o semipermanentes, como un aumento a una estadística otorgado por un periodo de tiempo luego de interactuar con una anormalidad o efectos de un regalo E.G.O. .
+            Estos aumentos a estadística no permanentes contarán hacia el cálculo hecho para determinar el nivel de una estadística en un empleado, por tanto es posible incrementar el nivel de una estadística en un mismo día utilizando estos efectos, un ejemplo de esto sería (T-09-90).
+
+          </p>
+
+        </div>
+
+      </div>
+
+      <div class="spas-cont-5"></div>
+      <div class="between-segments-deco"></div>
+      <div class="spas-cont-5"></div>
+
+      <p id="panic-states" class="titulos"> Estados de panico</p>
+
+      <div class="contenedor">
+
+        <p>Otra mecánica afectada por las estadísticas son los estados de pánico. Existen 4 estados de pánico, cada uno asociado a una estadística, al momento en el que un agente entre en pánico se tomará la estadística más alta que este posee para decidir qué estado tomará, los estados y estadística asociada son los siguientes:
+        </p>
+
+        <p>La variante {X} representará el nivel del empleado.</p>
+
+        <ul>
+          <li>
+
+                <P>Asesino: Si la estadística más alta del agente es Fortaleza este obtendrá un bono plano a su “velocidad de ataque” equivalente a la siguiente fórmula, ( {X} * {X} ) y procederá a perseguir y atacar a la entidad más cercana, esto incluye a empleados.
+                </P>
+                <img class="img-6" src="../img/EmployeesPanicResponseMurder.png" alt="">
+
+          </li>
+          <li>
+                <P>Suicidio: Si la estadística más alta del agente es Prudencia este comenzará a temblar y permanecerá en eso luegar por tiempo en 30 y 60 según, una ves este temporizador acabé el agente se suicidará. Todos los empleados presentes en la habitación dónde el suicidio ocurra tomarán daño blanco equivalente a 20 veces el nivel del empleado que haya cometido suicidio.
+                </P>
+                <img class="img-6" src="../img/EmployeesPanicResponseSuicide.png" alt="">
+
+          </li>
+          <li>
+                <P>Deambulante: Si la estadística más alta del agente es Templanza es obtendrá un bono plano a su “velocidad de movimiento” equivalente a la siguiente fórmula ( {X} * {X} ) y procederá a deambular por la instalación, realizando daño blanco por segundo equivalente a el nivel del agente en pánico a los empleados se encuentren en la misma habitación que esté.
+                </P>
+
+                <img class="img-6" src="../img/EmployeesPanicResponseWander.png" alt="">
+          </li>
+          <li>
+                <P>Sabotaje: Si la estadística más alta del agente es Justicia este recibirá un bono plano a su “velocidad de movimiento” equivalente a la siguiente fórmula ( {X} * {X} ) y un multiplicador a sus resistencias equivalente a la siguiente fórmula ( [ 1 - 0,{X} ]{X} ). El agente procederá a seleccionar una unidad de contención aleatoria en la instalación y correrá hasta llegar a ella, una vez en la puerta comenzará a golpearla con una palanca, cada golpe posee una chance de bajar el contador Qliphoth de la unidad de contención en 1, la probabilidad de que esto ocurra es equivalente a la siguiente fórmula por golpe ( 15 * {X} ) %. Luego de bajar el contador a cero o golpear la puerta 5 veces seleccionará otra unidad de contención para repetir el proceso.</P>
+
+                <img class="img-6" src="../img/EmployeesPanicResponseShutdown.png" alt="">
+          </li>
+        </ul>
+      </div>
+
+      <div class="spas-cont-5"></div>
+      <div class="between-segments-deco"></div>
+      <div class="spas-cont-5"></div>
+
+      <p id="damage-resistances" class="titulos"> Resistencias al daño</p>
+
+      <Div class="contenedor">
+
+        <p>La interacciones entre las fuentes de daño y las resistencias se expresan con multiplicadores, como ejemplo tenemos el traje base con el que todo agente comienza al ser contratado, sus estadística son la siguientes:
+        </p>
+
+        <ul>
+          <li><strong>Rojo 1.0</strong></li>
+          <li><strong>Blanco 1.0</strong></li>
+          <li><strong>Negro 1.5</strong></li>
+          <li><strong>Palido 2.0</strong></li>
+        </ul>
+
+        <img src="../img/Standar-Uniform.png" alt="">
+
+        <p>Los números asignados a cada daño son multiplicadores, es decir como al daño rojo y blanco se lo multiplica por 1 el agente recibirá del daño el daño que la fuente del daño haya realizado.</p>
+
+        <li><strong>Si la fuente de daño realiza 10 de daño rojo o blanco el agente recibirá 10 de daño indicado</strong></li>
+
+        <p>Por otro lado posee una resistencia al daño negro  del 1.5 y al pálido del pálido del 2.0</p>
+
+        <li><strong>Si la fuente del daño infringiera 10 daño negro y 10 de daño pálido el agente recibiria 15 de daño negro y 20 de daño pálido.</strong></li>
+
+        <p>Estás reglas no solo afectan a los trajes de los agentes sino además a las anormalidades, cada entidad poseerá algún tipo de resistencia o vulnerabilidad a algún tipo daño, esto es clave a la hora de suprimir entidades.</p>
+
+        <p>Además conforme más las se acerque a un valor las resistencias tomarán un nombre acorde al multiplicador, los rangos son los siguientes:</p>
+
+        <li><strong>2.0 - vulnerable</strong></li>
+        <li><strong>1.5 - débil </strong></li>
+        <li><strong>1.0 - normal</strong></li>
+        <li><strong>0.5 - resistente</strong></li>
+        <li><strong>0.0 - inmune</strong></li>
+        <li><strong>-1.0 - absorbente</strong></li>
+
+      </Div>
+
+      <div class="spas-cont-5"></div>
+      <div class="between-segments-deco"></div>
+      <div class="spas-cont-5"></div>
+
+      <p id="decimal-damage" class="titulos"> Daños decimales</p>
+
+      <div class="contenedor">
+
+        <p>Otra mecánica relacionada a las resistencias son las probabilidades de daños decimales, en caso de que el daño  resultante luego de ser aplicada un resistencia sea un número con decimales lo que se hará será tomar parte entera del número por un lado y tomar la parte decimal, multiplicarla por 100 y utilizar el número resultante como una posibilidad de sumar 1 al daño infligido. 
+        </p>
+
+        <p>Como ejemplo, en caso de que se inflija 5 de daño rojo al un agente con una resistencia de 0.5 a este, el daño final infligido al agente será de 2 con un 50% de probabilidades de que sea 3.</p>
+
+      </div>
+
+      <div class="spas-cont-5"></div>
+      <div class="between-segments-deco"></div>
+      <div class="spas-cont-5"></div>
+
+      <p id="E.G.O." class="titulos"> E.G.O. </p>
+
+      <div class="contenedor">
+
+        <p>El E.G.O. es el armamento con el que el jugador equipara a sus empleados, producido a través del trabajo con anormalidades existen 3 tipos, las armas E.G.O. , los trajes E.G.O. y los regalos E.G.O. .</p>
+
+        <p>Las armas y trajes E.G.O. se obtienen de la misma manera, salvó muy pocas excepciones todos los trajes y armas se producen mediante anormalidades utilizando las cajas PE únicas para costear dicho E.G.O. .
+        </p>
+
+        <p>Cómo prácticamente todo lo que puede catalogado en este juego el E.G.O. También es catalogado por las medidas de nivelación de riesgo Zayin, Teth, HE, WAW y Aleph para medir la calidad de este, cuánto mayor el nivel de riesgo mejor calidad. El riesgo de una anormalidad usualmente se transmitirá a su E.G.O. , pero existen raras excepciones dónde una anormalidad producirá E.G.O. de un nivel superior al propio, como ( F-01-69 ) produciendo E.G.O. WAW, o ( O-01-64 ) produciendo E.G.O. Aleph.
+        </p>
+
+        <div class="spas-cont-5"></div>
+
+        <p>Las armas E.G.O. poseen varias posibles características que las diferencian entre sí:</p>
+
+        <li><strong>Tipo de daño: Rojo, Blanco, Negro y/o Pálido.</strong></li>
+
+        <li><strong>Rango del daño: La cantidad mínima de daño que pueden infringir hasta la cantidad más alta por golpe.</strong></li>
+
+        <li><strong>Rango: no tiene métricas más allá de ir de “muy corto”, para armas de estilo navajas como ejemplo, a “muy largo”, para armas de estilo rifles como ejemplo.</strong></li>
+
+        <li><strong>Velocidad de ataque: Como el nombre indica, los intervalos que hay entre cada ataque propiciado por el arma.</strong></li>
+
+        <p>Por el otro se encuentran los trajes E.G.O. que normalmente sólo proporcionan resistencias y/o vulnerabilidades a los 4 tipos de daño.</p>
+
+        <div class="spas-cont-5"></div>
+
+        <p>Por otro lado estan los Regalos E.G.O., esto son obtorgados por la anormalidades al trabajar en ellas, cada anormalidad posee un Regalo E.G.O. unico y una provabilidad propia de otorgarlo</p>
+
+        <p>Cada Regalo E.G.O. ocupara una categoria dentro del inventario de Regalos E.G.O. del agente, estas "categorias" solo pueden almacenar 1 tipo de Regalo E.G.O. , es decir, si un agente posee un Regalo E.G.O. en la categoria "cabeza" y recibe otro Regalo E.G.O. para la misma casilla, reemplazará el regalo anterior en favot del nuevo</p>
+
+        <p>lista de categorias</p>
+
+        <li><strong>Sombrero</strong></li>
+        <li><strong>Casco</strong></li>
+        <li><strong>Ojos</strong></li>
+        <li><strong>Cara</strong></li>
+        <li><strong>Boca 1</strong></li>
+        <li><strong>Boca 2</strong></li>
+        <li><strong>Cachete</strong></li>
+        <li><strong>Broche</strong></li>
+        <li><strong>Collar</strong></li>
+        <li><strong>Espalda derecha</strong></li>
+        <li><strong>Espalda izquierda</strong></li>
+        <li><strong>Mano 1</strong></li>
+        <li><strong>Mano 2</strong></li>
+        <li><strong>Especial</strong></li>
+
+        <P>Los Regalos E.G.O. pueden ser visualizados clicando en el boton a la izquiera de Fortaleza y Templanza con un triangulo apuntando hacia la izquiera</P>
+
+        <img class="" src="../img/Agent-stats+gifts.png" alt="">
+
+        <p>Los regalos E.G.O. tienen la capacida de reducir estadisticas en favor de otras, en caso de que esto perjudique el role de empleado que lo posea lo indicado seria buscar otro regalo que ocupe la misma categoria para reemplzarlo</p>
+      </div>
+
+
+
+
+
+    </main>
 
 
 

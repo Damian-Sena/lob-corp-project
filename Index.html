@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hub-conceptos base</title>
 
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="Styles/Css/main.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
-<body>
+<body class="body-index">
     
     <header>
         <div class="navbar-container">
@@ -31,10 +32,10 @@
                           <li><a class="dropdown-item" href="#Navegacion_del_mapa">Navegacion del mapa</a></li>
                           <li><a class="dropdown-item" href="#Objetivos">Objetivos</a></li>
                           <li><a class="dropdown-item" href="#tipos_de_daño">Tipos de daño</a></li>
-                          <li><a class="dropdown-item" href="#Empleados">Empleados</a></li>
+                          <li><a class="dropdown-item" href="#empleados">Empleados</a></li>
                           <li><a class="dropdown-item" href="#Niveles_de_amenaza">Niveles de amenaza</a></li>
                           <li><a class="dropdown-item" href="#reinicios">Reinicios de dia</a></li>
-                          <li><a class="dropdown-item" href="#Finalizacion_del_dia">Finalizacion_de_dia</a></li>
+                          <li><a class="dropdown-item" href="#Finalizacion_del_día">Finalizacion de dia</a></li>
                           <li><a class="dropdown-item" href="#abno_selector">Selector de anormalidades</a></li>
                         </ul>
                     </li>
@@ -56,7 +57,7 @@
         </nav>
         </div>
 
-        <img class="page_first_logo" src="img/Iconos/lob corp logo.png" alt="logo de Lobotomy Corporation">
+        <img class="page_logo" src="img/Iconos/lob corp logo.png" alt="logo de Lobotomy Corporation">
 
         <h1>Gameplay-guide</h1>
     
@@ -66,7 +67,7 @@
 
         <div  class="container">
 
-            <div class="index-first-box">
+            <div class="first-box">
 
                 <span> Lobotomy corporation es un videojuego desarollado por el estudio coreano <a href="https://x.com/projmoonstudio">Project moon</a> centrado el manejo de recursos y anomalias, o anormalidades como se les refiere dentro del juego, dentro de una compania con el objetivo de generar energia. Esta guia se centrara exclusivamente en los aspectos del gameplay, ignorando su historia y el transcurso de esta.</span>
             </div>
@@ -86,40 +87,51 @@
         <p id="Comienzo_de_partida" class="titulos">Comienzo de partida</p>
 
         <div class="contenedor">
-
-
             <div class="row">
-                <div class="colum">
+                <div class="col">
+                    <div class="row">
 
-                    <p class="p1">Una vez se clique el botón de “primer día” comenzará la partida. Lo primero que se vera es el siguiente menu de seleccion:</p>
+                    <p>Una vez se clique el botón de “primer día” comenzará la partida. Lo primero que se vera es el siguiente menu de seleccion:</p>
+                    </div>
 
-                    <img class="img-1" src="img/first-day-abno.png" alt="seleccion de la primera anormalidad">
+                    <div class="row">
+                    <p> Este es el menu de selección de anormalidades, se explicara esto a detalle mas adelante dado de momento no es importante y solo hay una opción. Una vez seleccionado la anormalidad, se te presentaran los personajes de Angela, la IA que nos supervisara, y luego a la Malkuth, la sephira del departamento de control, quien nos asignara una misión, finalizado el dialogo se te movera al menu de despliegue</p>
 
-                    <p>
-                        Este es el menu de selección de anormalidades, se explicara esto a detalle mas adelante dado de momento no es importante y solo hay una opción. Una vez seleccionado la anormalidad, se te presentaran los personajes de Angela, la IA que nos supervisara, y luego a la Malkuth, la sephira del departamento de control, quien nos asignara una misión, finalizado el dialogo se te movera al menu de despliegue
-                    </p>
+                    </div>
 
-                    <img class="img-1" src="img/Menu de despliegue.png" alt="">
-
-                    <p>Este menú se nos presentará antes de comenzar cada día para planear y distribuir a nuestros empleados a lo largo de los departamentos, como estamos comenzando de momento solo hay un departamento con solo 3 casillas para llenar; para contratar empleados para rellenar estas casillas el juego te otorga 3 “puntos LOB” o “LOB points”, para utilizarlos clicka sobre el botón “contratar” o “hire”, lo cual te costará 1 LOB point y abrira siguiente menu
-                    </p>
-
-                    <img class="img-2" src="img/employe hire.png" alt="">
-
-                    <p>Momentáneamente lo que nos interesa es simplemente contratar empleados así nuevamente clicka en contratar. Los empleados contratos que no estén derivados en un departamento permanecerán debajo de los botones “contratar” y “E.G.O. list”, para asignarlos a un departamento deben ser clickeados y arrastrados hacia un departamento con espacio disponible. Una vez hayamos terminado de contratar a nuestros empleados haz click en el botón “empezar” o “begin management” para comenzar el juego.
-                    </p>
                 </div>
-                <div class="colum"></div>
+
+                <div class="col">
+                    <img class="img-1" src="img/first-day-abno.png" alt="seleccion de la primera anormalidad">
+                </div>
             </div>
+            <div class=spas-cont-5></div>
+            <div class="row">
+                <div class="col">
+                 <img class="img-1" src="img/Menu de despliegue.png" alt="">
+                </div>
+                <div class="col">
+                    <p>Este menú se nos presentará antes de comenzar cada día para planear y distribuir a nuestros empleados a lo largo de los departamentos, como estamos comenzando de momento solo hay un departamento con solo 3 casillas para llenar; para contratar empleados para rellenar estas casillas el juego te otorga 3 “puntos LOB” o “LOB points”, para utilizarlos clicka sobre el botón “contratar” o “hire”, lo cual te costará 1 LOB point y abrira siguiente menu</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col"></div>
+                <div class="col">
+
+                    <p>Momentáneamente lo que nos interesa es simplemente contratar empleados así nuevamente clicka en contratar. Los empleados contratos que no estén derivados en un departamento permanecerán debajo de los botones “contratar” y “E.G.O. list”, para asignarlos a un departamento deben ser clickeados y arrastrados hacia un departamento con espacio disponible. Una vez hayamos terminado de contratar a nuestros empleados haz click en el botón “empezar” o “begin management” para comenzar el juego.</p>
+                </div>
+                <div class="col">
+                    <img class="img-2" src="img/employe hire.png" alt="">  
+                </div>
+
+            </div>      
         </div>
 
         <div class="between-segments-deco"></div>
 
-        <p id="controles_basicos" class="titulos">controles basicos</p>
+        <p id="controles" class="titulos">controles basicos</p>
 
         <div class="contenedor">
-            <div class="row">
-                <div class="colum">
                     <ul>
                         <li>para mover la camara se puede bien mantener el click derecho y arrastrar el mouse o usar la teclas W , A , S y D para moverse hacia arriva, izquierda, abajo y la derecha respectivamente
                         </li>
@@ -138,8 +150,6 @@
                                 derecho sobre una unidad de contención para directamente seleccionar un tipo de trabajo para que este realize. Mas información sobre esto  en el apartado de <a href="pages/contaiment units.html">unidades de contencion</a></li>
                         </ul>
                     </ul>
-                </div>
-            </div>
         </div>
 
         <div class="between-segments-deco"></div>
@@ -155,21 +165,33 @@
 
                     <img class="img-1" src="img/inicio-control-department.png" alt="">
 
-                    <p>En un inicio no posee mucho espacio pero conforme avancen los dias se ira ampliando con nuevas habitaciones, corredores, elevadores y acceso a otros departamentos adyacentes. de estos hay 2 que tipos de habitaciones importantes de entender:
+                    <p>No posee mucho espacio pero conforme avancen los dias se ira ampliando con nuevas habitaciones, corredores, elevadores y acceso a otros departamentos adyacentes. de estos hay 2 que tipos de habitaciones importantes de entender:
                     </p>
                     <ul>
-                        <li>Elevadores: mientras que el movimiento horizontal de habitacion a habitacion sucede de manera relativamente continua, pasando desde el borde de una habitación al borde de otra adyacente conectadas por algún tipo de entrada, el movimiento vertical, que solo ocurre de elevador a elevador, es instantáneo una vez el agente seleccionado llegue al centro del elevador, y a diferencia del resto si un agente o agentes son seleccionados para permanecer en un elevador estos permanecerán en el centro, esto cerá útil para evadir anormalidades o ataques de estas que traspasan muros
-                        </li>
-                   
+                        <div class="row">
+                            <div class="col">
+                                <li>Elevadores: mientras que el movimiento horizontal de habitacion a habitacion sucede de manera relativamente continua, pasando desde el borde de una habitación al borde de otra adyacente conectadas por algún tipo de entrada, el movimiento vertical, que solo ocurre de elevador a elevador, es instantáneo una vez el agente seleccionado llegue al centro del elevador, y a diferencia del resto si un agente o agentes son seleccionados para permanecer en un elevador estos permanecerán en el centro, esto cerá útil para evadir anormalidades o ataques de estas que traspasan muros</li>
+                           </div>
+                        
+                           <div class="col">
+                                <img class="img-3" src="img/elevators.png" alt="">
+                            </div>
+                        </div>
 
-                    <img class="img-3" src="img/elevators.png" alt="">
+                        <div class="spas-cont-5"></div>
 
-                    
-                        <li>-Habitaciones principales de departamento: Son las habitaciones donde se encuentran los agentes de su departamente asignado, lo importante de estas que proveen curaciones tanto de salud como de como de sanidad mental cada ves que la barra en la parte superior de es la habitación se llene, a excepción cuando una anormalidad o amenaza se encuentra en la esta habitación.
-                        </li>
+                        <div class="row">
+                            <div class="col">
+                              <li>-Habitaciones principales de departamento: Son las habitaciones donde se encuentran los agentes de su departamente asignado, lo importante de estas que proveen curaciones tanto de salud como de como de sanidad mental cada ves que la barra en la parte superior de es la habitación se llene, a excepción cuando una anormalidad o amenaza se encuentra en la esta habitación.</li>
+                            </div>
+
+                            <div class="col">
+                             <img class="img-1" src="img/department-center.png" alt="">
+                            </div>
+
+                         </div>
+
                     </ul>
-
-                    <img class="img-1" src="img/department-center.png" alt="">
 
                 </div>
             </div>
@@ -180,18 +202,60 @@
         <p  id="Objetivos" class="titulos"> Objetivos</p>
 
         <div class="contenedor">
-            <p>
-                El objetivos central de lobotomy corporation es cumplir con la cuota de energía señalizada por la barra en la parte superior izquierda
-            </p>
+            <div class="row">
+                <div class="col">
+                    <div class="row">
 
-            <img class="img-4" src="img/energy-quota.png" alt=""><img class="img-4" src="img/energy-quota-2.png" alt="">
+                        <p>El objetivos central de lobotomy corporation es cumplir con la cuota de energía señalizada por la barra en la parte superior izquierda</p>
 
-            <p>El primer número señala la cantidad de energía acumulada en el dia y el segundo la cantidad a llegar, la barra se irá llenando conforme se trabaje con anormalidades y los resultados obtenidos de estas.
-            </p>
+                    </div>
 
-            <p>Una ves llenada la barra la opción de “day x completado” aparecerá en la para superior central para terminar el dia, pero no es obligatorio en caso de querer realizar algo mas en el dia.</p>
+                    <div class="spas-cont-5"></div>
 
-            <img class="img-4" src="img/day-finalization.png" alt="">
+                    <div class="row">
+
+                        <p>El primer número señala la cantidad de energía acumulada en el dia y el segundo la cantidad a llegar, la barra se irá llenando conforme se trabaje con anormalidades y los resultados obtenidos de estas.
+                        </p>
+
+                    </div>
+
+                    <div class="spas-cont-5"></div><div class="spas-cont-5"></div>
+
+                    <div class="row">
+
+                        <p>Una ves llenada la barra la opción de “day x completado” aparecerá en la para superior central para terminar el dia, pero no es obligatorio en caso de querer realizar algo mas en el dia.</p>
+
+                    </div>
+                </div>
+
+                <div class="col">
+
+                    <div class="row">
+
+                        <img class="img-4" src="img/energy-quota.png" alt="">
+
+                    </div>
+
+                    <div class="spas-cont-5"></div>
+
+                    <div class="row">
+
+                        <img class="img-4" src="img/energy-quota-2.png" alt="">
+
+                    </div>
+
+                    <div class="spas-cont-5"></div><div class="spas-cont-5"></div>
+
+                    <div class="row">
+
+                        <img class="img-4" src="img/day-finalization.png" alt="">
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="spas-cont-5"></div><div class="spas-cont-5"></div>
 
             <p>Cabe recalcar que una vez llena la barra de energía la cantidad de energía de acumulada en el dia no subirá pero si se fue a utilizar algo que consuma energía o fuese robada por algún otro factor el numero si bajará y se deberá volver a llenar hasta maximo para poder pasar al siguiente dia.</p>
 
@@ -256,24 +320,61 @@
 
         <div class="between-segments-deco"></div>
 
-        <p id="reinicios" class="titulos">Reinicio del dia, repositorio de memoria y reinico al primerdia</p>
+        <p id="reinicios" class="titulos">Reinicio del dia, repositorio de memoria y reinico al primer día</p>
 
         <div class="contenedor">
             <p>En caso peder control durante una o múltiples brechas de contención, perder demasiados agentes o agentes importantes, o simplemente querer reintentar el dia dandole a la tecla escape se pausara el juego y se nos presentarán un junto de opciones, dentro de esta existen:
             </p>
 
             <ul>
-                <li>La opción de reintentar que llevará al jugador al menú de despliegue previo a iniciar el dia, deshaciendo cualquier pérdida o progreso realizado en el dia
-                </li>
+                <div class="row">
+                    
+                    <div class="col">
 
-                <img src="img/day-resets.png" alt="" class="flex display-block">
+                        <div class="row">
 
-                <li>Por otro lado existe la mecánica de “repositorios de memoria”. Cada 5 dias contando a partir del día 1 se realizará un repositorio de memoria, este permite regresar al menú de despliegue del día guardado, eliminando cualquier anormalidad y empleados obtenidos pasado ese día, pero permitiendo mantener información sobre anormalidades, E.G.O. obtenido, y/o recompensas por completar una misión en ese tiempo, pero en caso de perder equipamiento E.G.O. a través de la muerte de un empleado al usar un repositorio de memoria este no se recuperará.
-                </li>
+                            <li>La opción de reintentar que llevará al jugador al menú de despliegue previo a iniciar el dia, deshaciendo cualquier pérdida o progreso realizado en el dia
+                            </li>
 
-                <li>
-                    Una tercera opción para la manipulación de del flujo de días el iniciar una partida nueva dandole al boton de “dia 1” en el menú principal, puesto que se perderán las anormalidades y empleados obtenidos durante la partida pero toda la información desbloqueada de la anormalidades, E.G.O. obtenido y recompensas por misión permanecerá en la nueva partida.
-                </li>
+                        </div>
+
+                        <div class="row">
+
+                            <li>Por otro lado existe la mecánica de “repositorios de memoria”. Cada 5 dias contando a partir del día 1 se realizará un repositorio de memoria, este permite regresar al menú de despliegue del día guardado, eliminando cualquier anormalidad y empleados obtenidos pasado ese día, pero permitiendo mantener información sobre anormalidades, E.G.O. obtenido, y/o recompensas por completar una misión en ese tiempo, pero en caso de perder equipamiento E.G.O. a través de la muerte de un empleado al usar un repositorio de memoria este no se recuperará.
+                            </li>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col">
+
+                        <img src="img/day-resets.png" alt="" class="img-4">
+
+                    </div>
+
+                </div>
+
+                <div class="spas-cont-5"></div>
+
+                <div class="row">
+
+                    <div class="col">
+
+                        <li>
+                            Una tercera opción para la manipulación de del flujo de días el iniciar una partida nueva dandole al boton de “dia 1” en el menú principal, puesto que se perderán las anormalidades y empleados obtenidos durante la partida pero toda la información desbloqueada de la anormalidades, E.G.O. obtenido y recompensas por misión permanecerá en la nueva partida.
+                        </li>
+
+                    </div>
+
+                    <div class="col">
+
+                        <img src="img/Day-one-reset.png" alt="" class="img-4">
+
+                    </div>
+
+                </div>
+
             </ul>
         </div>
 
@@ -285,19 +386,85 @@
 
             <p>Una vez completada la cuota de energía y seleccionado el completar el día el siguiente menú aparecerá</p>
 
-            <img class="img-8" src="img/end of day.png" alt="">
+            <div class="row">
 
-            <P>En este se mostrara:</P>
+                <div class="col">
 
-            <ul>
-                <li>Los aumentos en estadísticas de los agentes</li>
-                <img src="img/end-of-day-screen-A.png" alt="" class="flex display-block">
-                <li>El ratio de supervivencia de los agentes en el dia, junto a una calificación, cantidad de puntos LOB obtenidos y cantidad de promoción de agentes
-                </li>
-                <img src="img/end-of-day-screen-B.png" alt="" class="flex display-block">
-                <li>Y un historial de sucesos a lo largo del dia</li>
-                <img src="img/end-of-day-screen-C.png" alt="" class="flex display-block">
-            </ul>
+                    <img class="img-8" src="img/end of day.png" alt="">
+
+                </div>
+
+                <div class="col">
+
+
+                    <P>En este se mostrara:</P>
+
+                    <ul>
+
+                        <div class="row">
+
+                           <div class="col">
+
+                            <div class="row">
+
+                                <div class="col">
+
+                                    <li>Los aumentos en estadísticas de los agentes</li>
+
+                                </div>
+
+                                <div class="col">
+
+                                    <img src="img/end-of-day-screen-A.png" alt="" class="img-2">
+                                    
+                                </div>
+
+                            </div>
+
+                            <div class="spas-cont-5"></div>
+
+                            <div class="row">
+
+                                <div class="col">
+
+                                    <li>El ratio de supervivencia de los agentes en el dia, junto a una calificación, cantidad de puntos LOB obtenidos y cantidad de promoción de agentes
+                                    </li>
+
+                                </div>
+
+                                <div class="col">
+
+                                    <img src="img/end-of-day-screen-B.png" alt="" class="img-2">
+
+                                </div>
+
+                            </div>
+
+                            <div class="spas-cont-5"></div>
+
+                            <div class="row">
+
+                                <div class="col">
+
+                                    <li>Y un historial de sucesos a lo largo del dia</li>
+
+                                </div>
+
+                                <div class="col">
+
+                                    <img src="img/end-of-day-screen-C.png" alt="" class="img-2">
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                       </div>
+                    <ul>
+
+                </div>
+
+            </div>
 
         </div>
 
@@ -306,11 +473,26 @@
         <p id="abno_selector" class="titulos">Seleccion de anormalidades</p>
 
         <div class="contenedor">
-            <p>Al finalizar cada dia y pasar al siguiente se no presentara el un menu de seleccion entre 3 cajas 
-            </p>
-            <img class="img-1" src="img/Abno-selection.png" alt="">
-            <p>Cada una de estas cajas contiene una anormalidad, colocando el mouse por encima se puede leer texto que dará pistas acerca de cómo se comportará, al seleccionar una esta será agregada a un área de contención dentro del próximo departamento a ser expandido
-            </p>
+            <p>Al finalizar cada dia y pasar al siguiente se no presentara el un menu de seleccion entre 3 cajas </p>
+
+            <div class="spas-cont-5"></div>
+
+            <div class="row">
+
+                <div class="col">
+
+                    <p>Cada una de estas cajas contiene una anormalidad, colocando el mouse por encima se puede leer texto que dará pistas acerca de cómo se comportará, al seleccionar una esta será agregada a un área de contención dentro del próximo departamento a ser expandido</p>
+
+                </div>
+
+                <div class="col">
+
+                    <img class="img-1" src="img/Abno-selection.png" alt="">
+
+                </div>
+
+            </div>
+            
         </div>
     </main>
 
@@ -321,10 +503,10 @@
 
     <footer>
         <div class="contenedor-flex"></div>
-        <div class="row">
-            @derechos reservados: <a href="https://x.com/projmoonstudio">Project moon</a>
+        <div>
+            <p>@derechos reservados: <a href="https://x.com/projmoonstudio">Project moon</a></p>
 
-            @pagina de steam: <a href="https://store.steampowered.com/app/568220/Lobotomy_Corporation__Monster_Management_Simulation/">Lobotomy corporation</a>
+            <p>@pagina de steam: <a href="https://store.steampowered.com/app/568220/Lobotomy_Corporation__Monster_Management_Simulation/">Lobotomy corporation</a></p>
         </div>
     </footer>
     <img src="img/placeholder.png" alt="">

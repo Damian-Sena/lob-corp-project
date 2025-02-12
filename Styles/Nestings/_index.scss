@@ -1,0 +1,124 @@
+.body-index{
+    background-size: cover;
+    background-image:url(../../img/pcbackground.jfif);
+    background-attachment: fixed;
+
+    h1{
+        text-align: center;
+        padding: 50px;
+        color: white;
+    }
+
+    .spas-cont-5{
+        @include spas-cont-5
+    }
+
+    header {
+        .navbar-container{
+            @include navbar-cont;
+        }
+        .navbar{
+            @include navbar;
+        }
+        .page_logo{
+            @include page-logo;
+        }
+
+    }
+
+    main {
+        .first-box {
+            @include first-box;
+        }
+        .clarification {
+            @include clarification;
+        }
+        .titulo-seccion {
+            @include titulos-seccion;
+        }
+        .titulos {
+            @include titulos;
+        }
+        .contenedor {
+            @include contenedor;
+            img {
+                max-width: 100%;
+            }
+            
+            li {
+                padding-top: 15px;
+            }
+
+            ul {
+                ul{
+                    padding-left: 15vw
+                }
+            }
+
+            p {
+                padding: 10px
+            }
+        }
+        .between-segments-deco {
+            @include between-segments-deco
+        }
+
+        //sets de image para diferentes funciones, cambiar a mixin mas tarde
+        .img-1{
+            border: 1px solid $col_1;
+            display: block;
+            right: 0;
+            max-width: 850px;;
+        }
+        
+        .img-2{
+            border: 1px solid $col_1;
+            display: block;
+            align-self: center;
+        }
+        
+        .img-3{
+            height: 500px;
+            border: 1px solid $col_1;
+            display: block;
+        }
+        
+        .img-4{
+            border: 1px solid $col_1;
+            align-self: center;
+            width: 57%;
+        }
+        
+        .img-5{
+            width: 25px;
+            border: 1px solid $col_1;
+        }
+        
+        .img-6{
+            height: 250px;
+            border: 1px solid $col_1;
+        }
+        
+        .img-7{
+            width: 10%;
+            border: 1px solid $col_1;
+        }
+        
+        .img-8{
+        
+            width: 600px;
+            border: 1px solid $col_1;
+        }
+
+        .img-9{
+            width: 30%;
+            border: 1px solid rgb(248, 123, 5);
+        }
+    }
+
+
+    footer {
+        color: white;
+    }
+}
+
